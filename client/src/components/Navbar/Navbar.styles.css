@@ -1,0 +1,31 @@
+nav {
+  background-color: #f9c039;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  font-size: 1.5em;
+  color:black;
+  width: 100%;
+}
+
+.name-of-website {
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline-block;
+  color:black;
+  padding: 10px 20px 10px 20px;
+}
+
+li:hover{
+    color:white;
+}
+
+.right-side-items {
+  text-align: right;
+  float: right;
+  left: 100;
+}

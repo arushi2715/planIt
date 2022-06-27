@@ -1,0 +1,11 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.todo-page{
+    background-color: #f9c039;
+    min-height:100vh;
+    padding-bottom: 50px;
+}

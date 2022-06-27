@@ -1,0 +1,94 @@
+.created-note{
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    /* padding:10px; */
+    width:400px;
+    height:300px;
+    margin:80px 30px 80px 30px;
+    float:left;
+    overflow-y: scroll;
+}
+
+.note-header{
+    /* background-color: orange; */
+    display: inline-block;
+    width: 100%;
+    background-color: #3F3D56;
+    color:white;
+    /* border-radius: 20px; */
+    /* padding-bottom:5px; */
+    border-bottom:1px dashed #3F3D56 ;
+}
+
+li.created-note-title{
+    float: left;
+    color:white;
+    text-align: left;
+    font-size: 1.2em;
+    /* border-bottom:1px dashed white; */
+    text-decoration: underline 2px;
+}
+
+li.created-note-date{
+    text-align: right;
+    color:white;
+    font-size: 1.2em;
+    text-decoration: underline 2px;
+    float: right;
+/* background-color: bisque; */
+}
+
+
+/* li.note-title,li.note-date{
+    display: inline-block;
+} */
+/* .linote-header{ */
+    /* margin-bottom: 10px; */
+    /* display: inline-block;
+    background-color: blanchedalmond;
+} */
+
+/* .note-title{
+    float: left;
+} */
+/* 
+.note-date{
+    float: right;
+} */
+
+/* .created-note h1{ */
+    /* font-size:1.1em; */
+    /* margin-bottom:15px */
+/* } */
+
+/* .date{
+top:0;
+text-align: right;
+margin-top: -12.3%;
+} */
+
+.created-note p{
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    white-space: pre-wrap;
+    padding:10px 15px 5px 15px;
+    word-wrap: break-word;
+    text-align: justify;
+    /* text-align: center; */
+    /* text-overflow: ellipsis; */
+}
+
+.delete-note-button{
+    /* margin-top: 1em;
+    width:36px;
+    font-size:1em;
+     */
+     left:35%;
+     padding-bottom: 5px;
+     /* margin: 0;
+     position: relative;
+     top: 50%;
+     left: 50%;
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%); */
+}

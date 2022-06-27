@@ -1,0 +1,60 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: #F9C039;
+    height:auto;
+} */
+
+.homepage{
+    height:100vh;
+    /* margin-top:12%; */
+    /* margin-left:4%; */
+    background-color: #F9C039;
+    /* height:auto; */
+}
+
+.pagetext{
+transform: translateY(14em);
+/* margin-top: 10%; */
+margin-left: 2%;
+}
+
+
+.heading{
+    /* margin-top: 12%; */
+    /* margin-left: -40%; */
+    text-align: left;
+    padding:20px;
+    /* align-items: left; */
+  font-size: 5em;
+    padding-bottom:10px;
+}
+
+.content{
+    /* text-align: left; */
+    text-align: justify;
+    padding:20px;
+    font-size:1.5em;
+    line-height: 1.6;
+}
+
+.worry{
+    font-style: italic;
+    padding-right:10px;
+}
+
+.button{
+    margin-top: -10%;
+    margin-left:15%;
+    text-decoration: none;
+}
+
+
+.image{
+    margin-top:-2%;
+    margin-left:55%;
+}

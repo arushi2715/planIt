@@ -1,0 +1,29 @@
+.created-todo{
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    padding:10px;
+    width:600px;
+    height: auto;
+    /* position: absolute; */
+    /* margin:80px; */
+    border-radius: 20px;
+    margin: 40px auto auto auto;
+    left: 0;
+    right: 0;
+    /* float:left; */
+    align-items: center;
+    /* overflow-y: scroll; */
+}
+
+
+.created-todo li{
+    /* text-align: center; */
+list-style-type: none;
+ } 
+
+/* 
+li{
+    background-color: yellow;
+    font-size: 1em;
+}
+ */

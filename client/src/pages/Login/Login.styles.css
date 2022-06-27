@@ -1,0 +1,75 @@
+*{    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: aliceblue;
+} */
+
+.login-form{
+    background-color: #F9C039;
+    height:100vh;
+}
+
+
+.login-container{ 
+    /* margin-top:10%; 
+    top:10%;
+    bottom:-10%; */
+    transform: translateY(60%);
+}
+
+
+.login-form-two{
+    margin-top: 7%;
+}
+
+.loginform-title{
+    /* margin-top: 8%; */
+    font-size: 2.4em;
+    text-align: center;
+  font-weight: 700;
+  padding-top:5px;
+    padding:12px;
+}
+
+.name,.password{
+    align-items: center;
+    /* display: flex; */
+    margin-left: 28%;
+    padding:10px;
+    margin-right: auto;
+}
+
+.login-button{
+    align-items: center;
+    display: flex;
+    margin-left: 36%;
+    padding:10px;
+    margin-right: auto;
+}
+
+.login-text{
+    /* align-items: center; */
+    text-align: center;
+    padding:10px;
+    font-size:1.4em;
+    /* display: flex;
+    margin-left: 30%;
+    padding:10px;
+    margin-right: auto; */
+}
+
+/* .login{
+    margin-left: -30%;
+} */
+
+.login-image{
+    margin-top:-29.5%;
+    margin-left:50%;
+}
+
+.signup:hover{
+    color:white;
+}
