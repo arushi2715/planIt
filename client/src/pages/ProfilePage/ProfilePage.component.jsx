@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import images from "../../components/Carousel/Images";
 import ImageCarousel from "../../components/Carousel/Carousel.component";
 import "./ProfilePage.styles.css";
@@ -22,8 +22,6 @@ function ProfilePage() {
 
     const data = await result.json();
 
-    console.log(data);
-
     if(data.status===false){
         window.alert(data.message)       
     }
@@ -38,6 +36,7 @@ function ProfilePage() {
     }else{
         getUser();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[]);
 
   return(

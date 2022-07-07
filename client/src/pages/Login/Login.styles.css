@@ -3,9 +3,6 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background-color: aliceblue;
-} */
 
 .login-form{
     background-color: #F9C039;
@@ -14,25 +11,11 @@
 
 
 .login-container{ 
-    /* margin-top:10%; 
-    top:10%;
-    bottom:-10%; */
-    /* transform: translateY(60%); */
-    /* display: flex; */
-    /* display: inline-flex; */
-    /* align-items: center;
-    box-sizing: border-box;
-    margin-top: 70px; */
-    /* justify-content: space-evenly; */
-    /* margin-left:2%; */
-    /* text-align: center; */
     padding: 40px;
     margin-top: 10%;
     box-sizing: border-box;
-    /* background-color: #ffffff; */
     display: flex;
     justify-content: space-evenly;
-    /* justify-content: right; */
 }
 
 
@@ -41,7 +24,6 @@
 }
 
 .loginform-title{
-    /* margin-top: 8%; */
     font-size: 2.4em;
     text-align: center;
   font-weight: 700;
@@ -51,20 +33,10 @@
 
 .name,.password{
     align-items: center;
-    /* display: flex; */
-    /* background-color: aqua; */
-    /* margin-left: 28%; */
     padding:10px;
-    /* margin-right: auto; */
     width: 50%;
     margin: auto;
 }
-/* 
-.Name{
-    background-color: #F9C039;
-    float: left;
-    left:20%;
-} */
 
 .login-button{
     align-items: center;
@@ -75,29 +47,9 @@
 }
 
 .login-text{
-    /* align-items: center; */
     text-align: center;
     padding:10px;
     font-size:1.4em;
-    /* display: flex;
-    margin-left: 30%;
-    padding:10px;
-    margin-right: auto; */
-}
-
-/* .login{
-    margin-left: -30%;
-} */
-
-/* .login-image{
-    /* margin-top:-22%;
-    margin-left:50%; */
-    /* width:800px; */
-    /* height: 600px;
-} */ */
-
-.signup:hover{
-    color:white;
 }
 
 

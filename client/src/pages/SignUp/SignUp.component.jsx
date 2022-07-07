@@ -7,7 +7,6 @@ import signupimage from "../../assets/signup.svg";
 import "./SignUp.styles.css";
 
 function SignUp() {
-  // const history=History();
   const navigate=useNavigate();
   const [user, setUser] = useState({
     username: "",

@@ -13,7 +13,6 @@
 
 .pagetext {
   transform: translateY(14em);
-  /* margin-top: 10%; */
   margin-left: 2%;
 }
 
@@ -58,23 +57,15 @@
   }
   .pagetext {
     margin-top: -30%;
-    /* text-align: center; */
-    /* display: block; */
-    /* text-align: calc(top=100%); */
   }
   .heading {
     text-align: center;
   }
   .content {
     text-align: center;
-    /* padding-bottom: 20px; */
   }
   .button{
-    /* float:left; */
-    /* top:40em; */
     left:8em;
-    /* padding: 10px; */
-    /* margin-top: 10px; */
   }
 
 }

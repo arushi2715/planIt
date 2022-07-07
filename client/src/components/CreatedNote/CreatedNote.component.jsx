@@ -1,6 +1,5 @@
 import React from "react";
 import moment from "moment";
-import Button from "@material-ui/core/Button";
 import ModeEditOutlineIcon from "@mui/icons-material/ModeEditOutline";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./CreatedNote.styles.css";

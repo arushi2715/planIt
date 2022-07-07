@@ -3,9 +3,6 @@
     box-sizing: border-box;
 }
 
-/* body{
-    background-color: aliceblue;
-} */
 
 .signup-form{
     background-color: #F9C039;
@@ -14,9 +11,6 @@
 
 
 .signup-container{ 
-    /* margin-top:10%; 
-    top:10%;
-    bottom:-10%; */
     transform: translateY(38%);
 }
 
@@ -26,7 +20,6 @@
 }
 
 .signupform-title{
-    /* margin-top: 8%; */
     font-size: 2.4em;
     text-align: center;
   font-weight: 700;
@@ -40,7 +33,6 @@ color:white;
 
 .name,.email,.password,.confirm-password{
     align-items: center;
-    /* display: flex; */
     margin-left: 28%;
     padding:10px;
     margin-right: auto;
@@ -55,19 +47,10 @@ color:white;
 }
 
 .text{
-    /* align-items: center; */
     text-align: center;
     padding:10px;
     font-size:1.4em;
-    /* display: flex;
-    margin-left: 30%;
-    padding:10px;
-    margin-right: auto; */
 }
-
-/* .login{
-    margin-left: -30%;
-} */
 
 .signup-image{
     margin-top:-27%;

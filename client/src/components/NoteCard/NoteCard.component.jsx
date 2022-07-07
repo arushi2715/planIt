@@ -59,9 +59,6 @@ export default function NoteCard(props) {
 
     const data = await result.json();
 
-    // console.log(data);
-    // console.log(data.note.title);
-
     if (data.status === false) {
       window.alert(data.message);
     } else {

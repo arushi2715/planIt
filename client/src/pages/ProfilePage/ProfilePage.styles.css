@@ -8,14 +8,10 @@
     height: 100vh;
     background-color: #f9c039;
     color:black;
-    /* margin-top:3em; */
     padding: 60px;
-    /* margin: auto; */
     align-items: center;
     text-align: center;
-    /* overflow-y: scroll; */
     font-size: 2em;
-
 }
 
 .profile-carousel{

@@ -33,6 +33,7 @@ function TodoPage(){
         else{
             getTodos();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
     const userTodos=todos.map((todo)=>{

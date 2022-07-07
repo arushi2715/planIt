@@ -32,7 +32,8 @@ function NotesPage() {
     } else {
       getNotes();
     }
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[]);
 
   const userNotes = notes.map((note) => {
     return note;

@@ -1,7 +1,6 @@
 .created-note{
     background-color: white;
     box-shadow: 0 2px 5px #ccc;
-    /* padding:10px; */
     width:400px;
     height:300px;
     margin:80px 30px 80px 30px;
@@ -10,16 +9,11 @@
 }
 
 .note-header{
-    /* background-color: orange; */
-    /* display: inline-block; */
     width: 100%;
     background-color: #3F3D56;
     color:white;
-    /* border-radius: 20px; */
-    /* padding-bottom:5px; */
    justify-content: space-evenly;
    position: relative;
-    /* border-bottom:1px dashed #3F3D56 ; */
 }
 
 li.created-note-title{
@@ -27,7 +21,6 @@ li.created-note-title{
     color:white;
     text-align: left;
     font-size: 1.2em;
-    /* border-bottom:1px dashed white; */
     text-decoration: underline 2px;
 }
 
@@ -37,18 +30,15 @@ li.created-note-date{
     font-size: 1.2em;
     text-decoration: underline 2px;
     float: right;
-/* background-color: bisque; */
 }
 
 .icons{
-    /* color:white; */
     background-color:#3F3D56;
     position: relative;
 }
 
  li.edit-icon,li.delete-icon{
 padding: 10px; 
-/* position: relative; */
 float:right;
 color:white;
 } 
@@ -61,7 +51,5 @@ color:white;
     padding:10px 15px 5px 15px;
     word-wrap: break-word;
     text-align: justify;
-    /* text-align: center; */
-    /* text-overflow: ellipsis; */
 }
 
