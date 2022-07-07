@@ -1,12 +1,12 @@
 .created-todo{
     background-color: white;
     box-shadow: 0 2px 5px #ccc;
-    padding:10px;
-    width:600px;
+    padding:8px;
+    width:500px;
     height: auto;
     /* position: absolute; */
     /* margin:80px; */
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 40px auto auto auto;
     left: 0;
     right: 0;
@@ -21,9 +21,8 @@
 list-style-type: none;
  } 
 
-/* 
-li{
-    background-color: yellow;
-    font-size: 1em;
-}
- */
+
+ li.edit-todo-icon,li.delete-todo-icon{
+    color:black;
+    float: right;
+ }

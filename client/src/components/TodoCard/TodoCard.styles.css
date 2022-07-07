@@ -1,29 +1,35 @@
-.todo-form{
-    position: relative;
-    width:400px;
-    margin: 60px auto 30px auto;
+.todo-form {
+  position: relative;
+  width: 400px;
+  margin: 40px auto 30px auto;
   /* background: #fff; */
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 
-.todo-item{
-    border: none;
-    width:100%;
-    height: 40px;
-    /* margin-left:10px; */
-    border-radius: 20px;
-    text-align: center;
-    font-size: 1em;
-    outline: none;
+.todo-item {
+  border: none;
+  width: 100%;
+  height: 40px;
+  /* margin-left:10px; */
+  border-radius: 20px;
+  text-align: center;
+  font-size: 1em;
+  outline: none;
 }
 
-.todo-button{
- margin-left: 30%;
- display: flex;
- margin-right: auto;
- border-radius: 20px;
- align-items: center;
- padding: 10px;
+.todo-button {
+  margin-left: 30%;
+  display: flex;
+  margin-right: auto;
+  border-radius: 20px;
+  align-items: center;
+  padding: 10px;
+}
+
+.todo-page-heading {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2em;
 }

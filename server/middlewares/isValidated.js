@@ -7,13 +7,13 @@ exports.isValidated = async (req, res, next) => {
     req.headers.token,
     process.env.SECRET_KEY,
     async (err, decoded) => {
-      if (err) return res.status(500).send({ message: "error" });
+      if (err) {
+        return res.status(500).json({ status: false, message: err.message });
+      }
       const user = await User.findOne({ email: decoded.email });
-      if (!user) res.status(500).send({ message: "no user" });
+      if (!user) res.status(500).json({ message: "no user" });
       else {
-        req.email = decoded.email;
-        if (decoded.email != req.body.email)
-          return res.status(500).json({ message: "Error occurred" });
+        req.email = user.email;
       }
       next();
     }

@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slick-slide img {
+    padding: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+    width:600px;
+    /* height: 30%; */
+}
+
+.caption{
+    padding: 20px;
+}

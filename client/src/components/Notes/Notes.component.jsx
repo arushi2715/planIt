@@ -1,40 +1,26 @@
-import React,{useState} from "react";
+import React from "react";
 import NoteCard from "../NoteCard/NoteCard.component";
 import CreatedNote from "../CreatedNote/CreatedNote.component";
+import "./Notes.styles.css";
 
-function Notes(){
-    const[notes,setNotes]=useState([]);
+function Notes(props) {
+  return (
+    <div>
+      <NoteCard getNotes={props.getNotes} />
 
-    function addNote(newNote){
-        setNotes(previousNotes=>{
-            return[...previousNotes,newNote];
-        })
-    }
-
-    function deleteNote(id){
-        setNotes(previousNotes=>{
-            return previousNotes.filter((noteItem,index)=>{
-                return index!==id;
-            })
-        })
-    }
-
-    return(
-        <div>
-        <NoteCard onAdd={addNote}/>
-        {notes.map((noteItem,index)=>{
-            return(
-                <CreatedNote
-                key={index}
-                id={index}
-                title={noteItem.title}
-                content={noteItem.content}
-                onDelete={deleteNote}
-                />
-            )
-        })}
-        </div>
-    )
+      {props.notes.map((noteItem, index) => {
+        return (
+          <CreatedNote
+            key={index}
+            id={noteItem._id}
+            title={noteItem.title}
+            content={noteItem.content}
+            getNotes={props.getNotes}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default Notes;

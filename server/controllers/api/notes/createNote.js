@@ -10,18 +10,17 @@ exports.createNote = async (req, res) => {
       if (err) res.status(500).json({ message: err.message });
       else {
         const email = decoded.email;
-        const { noteid, title, content } = req.body;
-        if (!noteid || !title || !content)
+        const { title, content } = req.body;
+        if ( !title || !content)
           return res.status(400).json({ message: "All fields are required." });
 
         try {
-          const noteExists = await Note.exists({ noteid: req.body.noteid });
-          if (noteExists)
-            return res
-              .status(400)
-              .json({ message: "Note with this id already exists." });
+          // const noteExists = await Note.exists({ email });
+          // if (!noteExists)
+          //   return res
+          //     .status(400)
+          //     .json({status:false, message: "No note with this email exists." });
           const note = new Note({
-            noteid: noteid,
             email: email,
             title: title,
             content: content,

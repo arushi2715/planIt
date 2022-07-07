@@ -17,7 +17,22 @@
     /* margin-top:10%; 
     top:10%;
     bottom:-10%; */
-    transform: translateY(60%);
+    /* transform: translateY(60%); */
+    /* display: flex; */
+    /* display: inline-flex; */
+    /* align-items: center;
+    box-sizing: border-box;
+    margin-top: 70px; */
+    /* justify-content: space-evenly; */
+    /* margin-left:2%; */
+    /* text-align: center; */
+    padding: 40px;
+    margin-top: 10%;
+    box-sizing: border-box;
+    /* background-color: #ffffff; */
+    display: flex;
+    justify-content: space-evenly;
+    /* justify-content: right; */
 }
 
 
@@ -37,10 +52,19 @@
 .name,.password{
     align-items: center;
     /* display: flex; */
-    margin-left: 28%;
+    /* background-color: aqua; */
+    /* margin-left: 28%; */
     padding:10px;
-    margin-right: auto;
+    /* margin-right: auto; */
+    width: 50%;
+    margin: auto;
 }
+/* 
+.Name{
+    background-color: #F9C039;
+    float: left;
+    left:20%;
+} */
 
 .login-button{
     align-items: center;
@@ -65,11 +89,15 @@
     margin-left: -30%;
 } */
 
-.login-image{
-    margin-top:-29.5%;
-    margin-left:50%;
-}
+/* .login-image{
+    /* margin-top:-22%;
+    margin-left:50%; */
+    /* width:800px; */
+    /* height: 600px;
+} */ */
 
 .signup:hover{
     color:white;
 }
+
+

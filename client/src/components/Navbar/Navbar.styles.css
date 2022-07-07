@@ -4,7 +4,7 @@ nav {
   padding: 0;
   top: 0;
   font-size: 1.5em;
-  color:black;
+  color: black;
   width: 100%;
 }
 
@@ -16,16 +16,15 @@ li {
   list-style-type: none;
   text-decoration: none;
   display: inline-block;
-  color:black;
+  color: black;
   padding: 10px 20px 10px 20px;
 }
 
-li:hover{
-    color:white;
+li:hover {
+  color: white;
 }
 
 .right-side-items {
   text-align: right;
   float: right;
-  left: 100;
 }

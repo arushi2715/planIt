@@ -9,7 +9,7 @@ exports.signIn = async (req, res) => {
   if (!email || !password) {
     return res
       .status(400)
-      .send({ status: false, message: "These fields are required." });
+      .json({ status: false, message: "These fields are required." });
   }
 
   // if (req.headers.email !== email)
@@ -19,12 +19,12 @@ exports.signIn = async (req, res) => {
   if (!userExists) {
     return res
       .status(400)
-      .send({ status: false, message: "No user with this email exists." });
+      .json({ status: false, message: "No user with this email exists." });
   } else {
-    const token = jwt.sign({ email: userExists }, process.env.SECRET_KEY);
+    const token = jwt.sign({ email: userExists.email,password:userExists.password }, process.env.SECRET_KEY);
     return res
       .status(200)
-      .send({
+      .json({
         status: true,
         token: token,
         message: "User logged in",

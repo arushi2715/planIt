@@ -4,6 +4,7 @@ const router=express.Router();
 const {createNote }= require("../controllers/api/notes/createNote");
 // const {isValidated}=require("../middlewares/isValidated");
 const {getNotes}=require("../controllers/api/notes/getNotes");
+const {getNote}=require("../controllers/api/notes/getNote");
 const {updateNote}=require("../controllers/api/notes/updateNote");
 const {deleteNote}=require("../controllers/api/notes/deleteNote");
 
@@ -11,6 +12,7 @@ const {deleteNote}=require("../controllers/api/notes/deleteNote");
 
 router.post("/createNote", createNote);
 router.get("/getNotes",getNotes);
+router.get("/getNote/:id",getNote);
 router.patch("/updateNote/:id",updateNote);
 router.delete("/deleteNote/:id",deleteNote);
 

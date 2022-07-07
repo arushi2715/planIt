@@ -7,10 +7,6 @@ const notesSchema = new Schema(
       type: String,
       required: true,
     },
-    noteid: {
-      type: Number,
-      required: true,
-    },
     title: {
       type: String,
       required: true,

@@ -8,6 +8,11 @@ form.notes-form {
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 
+.note-page-heading {
+  text-align: center;
+  font-size: 2em;
+}
+
 .add-note-button {
   align-items: center;
   display: flex;
@@ -16,8 +21,9 @@ form.notes-form {
   margin-right: auto;
 }
 
-.note-title,.note-content{
- width: 100%;
+.note-title,
+.note-content {
+  width: 100%;
   border: none;
   padding: 4px;
   outline: none;

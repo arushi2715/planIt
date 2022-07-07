@@ -2,19 +2,23 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    /* overflow-y: scroll; */
 }
 
 .notes-container{
-    min-height:100vh;
+    height:100vh;
     background-color:#f9c039 ;
-    background-repeat: repeat;
-    overflow-y: hidden;
-    top:0;
-    bottom: 0;
+    /* background-repeat: repeat; */
+    overflow-y: scroll;
+    /* top:0;
+    bottom: 0; */
 }
 
 .note-page-heading{
     text-align: center;
     font-size: 2em;
-    padding:10px;
+    /* padding:10px; */
+    /* top:90px; */
+    margin-top: 70px;
 }
+
