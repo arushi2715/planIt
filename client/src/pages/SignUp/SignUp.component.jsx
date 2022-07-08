@@ -55,7 +55,6 @@ function SignUp() {
     const { username, email, password, confirmPassword } = user;
     const result = await fetch(
       " https://jot-diaries.herokuapp.com/auth/signup",
-      // "http://localhost:8000/auth/signup",
       {
         method: "POST",
         headers: {
@@ -70,28 +69,24 @@ function SignUp() {
       }
     );
 
-    console.log(result);
 
     const data = await result.json();
 
-    // console.log(data);
     if(data.status===false)
     {
       window.alert(data.message);
-      // console.log("error");
+      setUser({username:"",email:"",password:"",confirmPassword:""})
     }
     else{
       if(data.token){
         localStorage.setItem("token",data.token);
-        navigate("/notes");
-      window.alert(data.message);
-      // console.log("registration done");
+        navigate("/profile");
+        window.alert(data.message);
+        window.location.reload();
       }
       else{
-        // console.log("hyee");
         window.alert("There was some error, Please try again later.")
       }
-      // history.push("/notes");
     }
   }
 
@@ -106,18 +101,14 @@ function SignUp() {
             backgroundColor: "#3F3D56",
             marginLeft: "4%",
           }}
-          // onSubmit={formSubmit}
         >
           <form
             className="signup-form-two"
-            // action="submit"
-            // onSubmit={formSubmit}
             style={{ backgroundColor: "#D5D5D5" }}
           >
             <div className="signupform-title">Sign Up</div>
             <div className="name">
               <TextField
-                // id="filled-basic"
                 label="Name"
                 variant="filled"
                 className="Name"
@@ -131,7 +122,6 @@ function SignUp() {
             </div>
             <div className="email">
               <TextField
-                // id="filled-basic"
                 label="Email"
                 variant="filled"
                 className="Email"
@@ -144,7 +134,6 @@ function SignUp() {
             </div>
             <div className="password">
               <TextField
-                // id="filled-basic"
                 label="Password"
                 variant="filled"
                 required
@@ -157,7 +146,6 @@ function SignUp() {
             </div>
             <div className="confirm-password">
               <TextField
-                // id="filled-basic"
                 label="Confirm Password"
                 variant="filled"
                 name="confirmPassword"
@@ -169,17 +157,13 @@ function SignUp() {
               />
             </div>
             <div className="signup-button">
-              {/* <Link to="/notes" style={{ textDecoration: "none" }}> */}
                 <Button
-                  //   className="join-button"
-                  // authSubmit
                   onClick={formSubmit}
                   variant="contained"
                   style={{ fontSize: "1.2em" }}
                 >
                   Sign Up
                 </Button>
-              {/* </Link> */}
             </div>
           </form>
           <div className="text">
@@ -191,10 +175,9 @@ function SignUp() {
               <div className="login">LOGIN</div>
             </Link>
           </div>
-          {/* </div> */}
         </Container>
         <div className="signup-image">
-          <img src={signupimage} alt="signup" />
+          <img src={signupimage} alt="signup" style={{width:"900px"}} />
         </div>
       </div>
     </div>

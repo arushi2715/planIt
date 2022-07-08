@@ -13,6 +13,7 @@ function Navbar() {
 
   async function userLogOut() {
     localStorage.removeItem("token");
+    window.location.reload();
   }
 
 

@@ -21,13 +21,19 @@ function HomePage(){
             </span>
             We have interesting blogs for you to help you keep motivated.
         </div>
-        </div>
-        <div className="image">
-            <img src={note} alt="note"/>
-        </div>
         <div className="button">
         <Link to="/signup" style={{textDecoration:"none"}}>
         <Button className="join-button" variant="contained" style={{fontSize:"1.2em"}}>JOIN NOW</Button></Link>
+        </div>
+        {/* </div> */}
+        <div className="image">
+            <img src={note} alt="note" style={{width:"900px"}}/>
+        </div>
+        {/* </div> */}
+        {/* <div className="button">
+        <Link to="/signup" style={{textDecoration:"none"}}>
+        <Button className="join-button" variant="contained" style={{fontSize:"1.2em"}}>JOIN NOW</Button></Link>
+        </div> */}
         </div>
     </div>
     )

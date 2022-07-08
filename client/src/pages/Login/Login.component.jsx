@@ -12,7 +12,6 @@ function Login() {
 
   function handleChange(event) {
     const { value, name } = event.target;
-    // console.log(event);
     setUser((previousValue) => {
       if (name === "email") {
         return {
@@ -33,7 +32,6 @@ function Login() {
     const { email, password } = user;
     const result = await fetch(
       "https://jot-diaries.herokuapp.com/auth/signin",
-      // "http://localhost:8000/auth/signin",
       {
         method: "POST",
         headers: {
@@ -41,59 +39,47 @@ function Login() {
         },
         body: JSON.stringify({
           email,
-          password
+          password,
         }),
       }
     );
 
-
-   
     const data = await result.json();
 
     if (data.status === false) {
-      // console.log("hyee");
       window.alert(data.message);
-     
     } else {
       if (data.token) {
         localStorage.setItem("token", data.token);
         window.alert(data.message);
         navigate("/profile");
-      } 
-      else {
-        // console.log("hyeeeeee");
+        window.location.reload();
+      } else {
         window.alert("Some error occurred");
       }
     }
   }
-
-
 
   return (
     <div className="login-form">
       <div className="login-container">
         <Container
           maxWidth="sm"
-          // className="login-container"
           style={{
-            height: "30em",
-            // width:"80%",
-            // paddingTop: "2%",
-            // marginTop:"5%",
+            height: "auto",
             backgroundColor: "#3F3D56",
+            paddingTop: "2%",
             marginLeft: "4%",
           }}
         >
           <form
             className="login-form-two"
-            // action="submit"
             method="POST"
-            style={{ backgroundColor: "#D5D5D5",marginTop:"80px"}}
+            style={{ backgroundColor: "#D5D5D5" }}
           >
             <div className="loginform-title">Sign In</div>
             <div className="name">
               <TextField
-                // id="filled-basic"
                 label="Email"
                 variant="filled"
                 className="Name"
@@ -106,7 +92,6 @@ function Login() {
             </div>
             <div className="password">
               <TextField
-                // id="filled-basic"
                 label="Password"
                 variant="filled"
                 required
@@ -118,16 +103,13 @@ function Login() {
               />
             </div>
             <div className="login-button">
-              {/* <Link to="/notes" style={{ textDecoration: "none" }}> */}
-                <Button
-                  onClick={logInUser}
-                  // className="join-button"
-                  variant="contained"
-                  style={{ fontSize: "1.2em" }}
-                >
-                  Sign In
-                </Button>
-              {/* </Link> */}
+              <Button
+                onClick={logInUser}
+                variant="contained"
+                style={{ fontSize: "1.2em" }}
+              >
+                Sign In
+              </Button>
             </div>
           </form>
           <div className="login-text">
@@ -138,9 +120,7 @@ function Login() {
             >
               <div className="signup">SIGN UP</div>
             </Link>
-            
-          </div> 
-          
+          </div>
         </Container>
         <div className="login-image">
           <img src={loginimage} alt="login" />

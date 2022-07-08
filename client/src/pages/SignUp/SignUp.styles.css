@@ -11,12 +11,16 @@
 
 
 .signup-container{ 
-    transform: translateY(38%);
+    padding: 40px;
+    margin-top: 8%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 
 .signup-form-two{
-    margin-top: 4%;
+    margin-top: 7%;
 }
 
 .signupform-title{
@@ -33,9 +37,9 @@ color:white;
 
 .name,.email,.password,.confirm-password{
     align-items: center;
-    margin-left: 28%;
+    width:50%;
     padding:10px;
-    margin-right: auto;
+    margin: auto;
 }
 
 .signup-button{
@@ -52,7 +56,3 @@ color:white;
     font-size:1.4em;
 }
 
-.signup-image{
-    margin-top:-27%;
-    margin-left:42%;
-}

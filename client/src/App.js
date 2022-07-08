@@ -10,8 +10,11 @@ import TodoPage from "./pages/TodoPage/TodoPage.component";
 // import Blogs from "./components/Blogs/Blogs.component";
 import ProfilePage from "./pages/ProfilePage/ProfilePage.component";
 
+
+
 function App() {
   return (
+  
     <BrowserRouter>
       <Navbar />
       <Routes>
