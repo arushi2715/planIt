@@ -107,7 +107,7 @@ Tired of noting down things at random places amd then forgetting?<br>
    cd server
    ```
 
-6. Set up a `.env` file following the `example.env` file.
+6. Set up a `.env` file following the `.example.env` file.
 
 7. Install NPM packages
    ```sh
