@@ -130,9 +130,7 @@ Tired of noting down things at random places amd then forgetting?<br>
 
 <!-- CONTACT -->
 ## Contact
-<a href="https://www.linkedin.com/in/arushiagrawal27/"><img src="https://user-images.githubusercontent.com/78142604/177971889-fa06967c-7093-4166-bc91-9159ed63f474.png
-" style="width:40px"/></a> &nbsp; &nbsp;<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="https://user-images.githubusercontent.com/78142604/177972658-f2964105-6770-4103-96cf-ccc8a1b141fb.png
-" style="width:40px"></a>
+<a href="https://www.linkedin.com/in/arushiagrawal27/"><img src="https://user-images.githubusercontent.com/78142604/177971889-fa06967c-7093-4166-bc91-9159ed63f474.png" style="width:40px"/></a> &nbsp; &nbsp;<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="https://user-images.githubusercontent.com/78142604/177972658-f2964105-6770-4103-96cf-ccc8a1b141fb.png" style="width:40px"></a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
